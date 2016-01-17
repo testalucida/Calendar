@@ -5,11 +5,10 @@ using namespace my;
 
 DayTable::DayTable( int x, int y, int w, int h ) : SimpleTable( x, y, w, h ) {
     _r = _c = -1;
-//    this->color( FL_RED );
     _weekendColor = fl_rgb_color( 193, 211, 255 );
-	col_resize( 0 );
-    enableDragging( false );
-    
+	col_resize( 0 );    
+    row_resize( 0 );
+    setSelectionMode( SELECTIONMODE_CELL_SINGLE );
 }
 
 bool DayTable::canSelectCell( int row, int col )  {
