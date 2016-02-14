@@ -19,6 +19,11 @@ public:
 	
 	void setDate( const my::MyDate & );
     void getSelectedDate( my::MyDate & );
+    
+    /** sets a range of years to be shown in the years combobox
+        "show" will be seen in the combobox */
+    void setYearRange( int from, int to, int show );
+    
 private:
 	/** updates day table by the given date (nn, yyyy, dd) */
 	void setDays( int month, int year, int day );

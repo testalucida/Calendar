@@ -27,6 +27,10 @@ public:
 
 	/** sets the initially selected date */
 	void setDate( const char *date );
+    
+    /** sets a range of years to be shown in the years combobox
+       "show" will be seen in the combobox */
+    void setYearRange( int from, int to, int show );
 
 	/** shows this dialog at the given position and returns 
      the selected date. 

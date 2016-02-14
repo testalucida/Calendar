@@ -135,6 +135,18 @@ void CalendarController::getSelectedDate( my::MyDate &date ) {
     date.SetDate( dayNr, month, year );
 }
 
+void CalendarController::setYearRange( int from, int to, int show ) {
+    _years.clear();
+    int idx = 0;
+    for( int i = from; i <= to; i++ ) {
+        if( i == show ) {
+            idx = i - from;
+        }
+        _years.add( to_string( i ).c_str() );
+    }
+    _years.value( idx );
+}
+
 void CalendarController::comboCallbackStatic( Fl_Widget *w, void *pUserData ) {
     ((CalendarController*)pUserData)->onMonthYearChanged();
 }

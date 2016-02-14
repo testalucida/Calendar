@@ -95,6 +95,10 @@ void Flx_Calendar::setDate( const char *date ) {
 	setDate( dt );
 }
 
+void Flx_Calendar::setYearRange( int from, int to, int show ) {
+    _pCalCtrl->setYearRange( from, to, show );
+}
+
 /** shows this dialog at the given position */
 MyDate Flx_Calendar::show( int x, int y ) {
 	position( x, y );
