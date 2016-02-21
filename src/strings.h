@@ -9,7 +9,7 @@ static std::string months[] = {
 	"Jul", "Aug", "Sep", "Okt", "Nov", "Dez", ""
 };
 
-static const int MIN_YEAR = 2008;
+static int MIN_YEAR = 2008;
 
 static std::string years[] = {
 	"2008", "2009", "2010", "2011", "2012", "2013", "2014", "2015", 

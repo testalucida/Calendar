@@ -145,6 +145,7 @@ void CalendarController::setYearRange( int from, int to, int show ) {
         _years.add( to_string( i ).c_str() );
     }
     _years.value( idx );
+    MIN_YEAR = from;
 }
 
 void CalendarController::comboCallbackStatic( Fl_Widget *w, void *pUserData ) {
